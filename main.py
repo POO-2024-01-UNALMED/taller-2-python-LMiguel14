@@ -7,8 +7,15 @@ class Auto():
     self.marca = marca
     self.motor= motor
     self.registro = registro
+
   def  cantidadAsientos(self):
-    pass
+    cantidadAsientos=0
+    for i in self.asientos:
+      if isinstance(i, Asiento) == True:
+        cantidadAsientos += 1
+    return cantidadAsientos
+     
+    
   def verificarIntegridad(self):
     pass
         
@@ -34,4 +41,3 @@ class Asiento():
     colores = ["verde", "amarillo", "blanco", "negro" , "rojo",]
     if nuevo_color in colores:
       self.color = nuevo_color
-
