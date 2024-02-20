@@ -26,7 +26,7 @@ class Motor():
 
 
 class Asiento():
-  def _init_ (self, color , precio , registro):
+  def __init__ (self, color , precio , registro):
     self.color =    color
     self.precio =   precio
     self.registro = registro
@@ -34,3 +34,4 @@ class Asiento():
     colores = ["verde", "amarillo", "blanco", "negro" , "rojo",]
     if nuevo_color in colores:
       self.color = nuevo_color
+
