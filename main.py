@@ -13,7 +13,7 @@ class Auto():
     for i in self.asientos:
       if isinstance(i, Asiento) == True:
         cantidadAsientos += 1
-    return cantidadAsientos
+    print(cantidadAsientos)
      
     
   def verificarIntegridad(self):
@@ -41,3 +41,4 @@ class Asiento():
     colores = ["verde", "amarillo", "blanco", "negro" , "rojo",]
     if nuevo_color in colores:
       self.color = nuevo_color
+
