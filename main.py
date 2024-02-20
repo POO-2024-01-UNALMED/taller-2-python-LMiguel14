@@ -22,10 +22,13 @@ class Auto():
     for i in self.asientos:
       if isinstance(i, Asiento) == True:
         registrosAsientos.append(i.registro)
-    if registrosAsientos == registros :
-      print("Auto original")
+    
+    if registrosAsientos == registros:
+      #print(registros == registrosAsientos)
+      return "Auto original"
     else:
-      print("Las piezas no son originales")  
+      #print(registros == registrosAsientos)
+      return "Las piezas no son originales" 
 
 
 class Motor():
